@@ -9,6 +9,7 @@
 </head>
 <body>
     <h1>hello</h1>
+    <h2>world</h2>
     <!--changing css with javascript-->
     <!--sometimes,you need to set your elements css with javascript to do so,you can use the style property
     //setting css
@@ -17,13 +18,27 @@
            -->
            <button>click me</button>
            <script>
-            let h1=document.querySelector('h1')
-            h1.style.color='red'
+            const elements=document.querySelector('h1')
+            let domrect=document.queryBoundingClientRect()
+            //h1.style.color='red'
             let button=document.querySelector(button)
             button.style.color='green'
             button.style.backgroundcolor='grey'
             button.style.width='100px'
+            const element=document.querySelector('h1')
+            element.setAttribute("class", "red")
+            let a=element.getAttribute('class')
+            let a1=element.removeAttribute('class')
+            const e=document.querySelector('h2')
+            e.setAttribute("class","green")
+            let b=e.getAttribute('class')
+            let b1=e.removeAttribute('class')
+            console.log(a)
+
            </script>
-    
-</body>
+           <!--changing attributes
+                 -->
+                 <div id="purple" class="triceratops" data-attr=""
+    </body>
 </html>
+//finding the element size and position
